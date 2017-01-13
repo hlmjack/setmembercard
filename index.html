@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+   <title>会员卡设置</title>
+   <link href="./css/bootstrap.min.css" rel="stylesheet" />
+   <link href="./css/bootstrap-theme.min.css" rel="stylesheet" />   
+   <link href="./css/upimg.css" rel="stylesheet" /> 
+</head>
+<body>
+  <div class="line"></div>
+  <div id="container" class="container">
+    <!-- <form method="POST" action="" enctype="multipart/form-data">
+      <div class="row">
+        <div class="col-md-4 col-sm-6">
+          <div class="well">
+              <span class="membername">粉丝会员</span>
+              <a href="#">
+                 <img src="./534318.jpg" class="img-responsive">
+                 <button class="btn btn-default upbtn">上传 <strong><span class="glyphicon glyphicon-plus"></span></strong></button>
+                <input type="file" name="uploadimg" class="file fileset" style="background-color:red;"/>
+              </a>
+          </div>
+         </div>
+        </div>
+        <button id="submit" class="btn" >提交</button>
+      </form> -->
+    </div>
+   <script src="./js/jquery.min.js"></script>
+   <script src="./js/bootstrap.min.js"></script>
+   <script src="./js/upload.js"></script>
+   <script>
+    $(function(){
+      upload.init("container");
+      $("input[type='file']").hover(function(){
+        $(this).prev().addClass("active");
+      }).mouseleave(function(){
+        $(this).prev().removeClass("active")
+      });
+    })
+
+   </script>
+</body>
+</html>
